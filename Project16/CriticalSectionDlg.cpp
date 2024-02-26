@@ -65,7 +65,7 @@ DWORD WINAPI Read(LPVOID lp)
 {
 	EnterCriticalSection(&cs);
 
-	ifstream in(TEXT("array.txt"));
+	ifstream in(TEXT("array.txt")); 
 	if (!in.is_open())
 	{
 		MessageAboutError(GetLastError());
